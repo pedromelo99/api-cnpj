@@ -1,0 +1,63 @@
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #fff5f5;
+    border: 2px solid #feb2b2;
+    border-radius: 12px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.error-content {
+    flex: 1;
+}
+
+.error-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #c53030;
+    font-weight: 600;
+}
+
+.error-text {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #742a2a;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .error-message {
+        padding: 1rem;
+    }
+
+    .error-icon {
+        font-size: 1.25rem;
+    }
+
+    .error-title {
+        font-size: 1rem;
+    }
+
+    .error-text {
+        font-size: 0.875rem;
+    }
+}
